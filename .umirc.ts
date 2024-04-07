@@ -6,7 +6,6 @@ export default defineConfig({
   ],
   routes: [
     { path: "/", component: "index" },
-    {path:'/childpage',component:"index"},
     {path:'/new',component:"new"}
 
   ],

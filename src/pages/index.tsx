@@ -109,18 +109,7 @@ const HomePage = () => {
       退出全屏
     </div>
 
-    <div className='nofull' onClick={handlesonFull}>
-      子全屏
-    </div>
-    <div className='nofull' onClick={handlesonNot}>
-      子退出全屏
-    </div>
-    <div className='nofull' onClick={handlesonopenFull}>
-      open子全屏
-    </div>
-    <div className='nofull' onClick={handlesonopenNot}>
-      open子非全屏
-    </div>
+  
     <div className='close' onClick={handleColse}>
       关闭
     </div>
