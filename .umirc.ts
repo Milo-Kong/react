@@ -6,7 +6,6 @@ export default defineConfig({
   ],
   routes: [
     { path: "/", component: "index" },
-    {path:'/new',component:"new"}
 
   ],
   npmClient: 'yarn',
@@ -14,8 +13,6 @@ export default defineConfig({
   jsMinifierOptions: {
     target: ['chrome80', 'es2020']
   },
-  // styledComponents: {},
-  // antd:{},
   clientLoader: {},
   locale: {
     default: 'zh-CN',
@@ -24,16 +21,6 @@ export default defineConfig({
     baseNavigator: false,
     title:false
   },
-  // headScripts: [
-  //   { src: `https://cstaticdun.126.net/load.min.js?t=${new Date().getTime()}`},
-  //   { src: `https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.1/swiper-bundle.min.js?t=${new Date().getTime()}`},
-  //   { src: "https://www.googletagmanager.com/gtag/js?id=G-DF3LQ261MQ"},
-  //   `window.dataLayer = window.dataLayer || [];
-  //       function gtag(){dataLayer.push(arguments)}
-  //       gtag('js', new Date());
-
-  //       gtag('config', 'G-DF3LQ261MQ');`
-  // ],
   chainWebpack(config:any) {
     config.module
       .rule('ttf')

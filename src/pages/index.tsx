@@ -1,9 +1,8 @@
 import { isAndroid } from '@/Common'
-import './index.less'
-import {history} from 'umi'
+import { history } from 'umi'
 const HomePage = () => {
   const IsAndroid = isAndroid()
-  
+
   const handleFull = () => {
     const jsn = {
       type: 'fullScreen',
@@ -101,26 +100,32 @@ const HomePage = () => {
       webkit.messageHandlers._tw_.postMessage(JSON.stringify(notJson))
     }
   }
-  return (<> <div className='mainView'>
-    <div className='full' onClick={handleFull}>
-      全屏
-    </div>
-    <div className='nofull' onClick={handleNot}>
-      退出全屏
-    </div>
+  return   (  <div className='mainView'>
+    <div className='comTopView'>
+    asdas
 
-  
-    <div className='close' onClick={handleColse}>
-      关闭
     </div>
-    <div className='close newbtn' onClick={()=>{
-      history.push('/new')
-    }}>
-      打开新的页面
-    </div>
-  </div>
-  </>
+  </div>)
+  // return (<> <div className='mainView'>
+  //   <div className='full' onClick={handleFull}>
+  //     全屏
+  //   </div>
+  //   <div className='nofull' onClick={handleNot}>
+  //     退出全屏
+  //   </div>
 
-  );
+
+  //   <div className='close' onClick={handleColse}>
+  //     关闭
+  //   </div>
+  //   <div className='close newbtn' onClick={() => {
+  //     history.push('/new')
+  //   }}>
+  //     打开新的页面
+  //   </div>
+  // </div>
+  // </>
+
+  // );
 }
 export default HomePage

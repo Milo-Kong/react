@@ -56,11 +56,13 @@
 .mainContent {
   width: 100%;
   display: flex;
-  max-width: 119rem;
-  // background: red;
+  max-width: 120rem;
   flex-direction: column;
+  @media screen and (max-width:1200px) {
+    width:98%;
+  };
   @media screen and (max-width:768px) {
-    padding:16px;
+    width:90%;
   };
   position: relative;
 }
@@ -83,6 +85,12 @@
   }
 }
 
+.comTopView{
+  margin-top: 8rem;
+  @media (max-width: 768px) {
+    margin-top: 50px;
+  }
+}
 .mt-10 { margin-top: 1rem; @media (max-width: 768px) { margin-top: 5px;} }
 .mt-12 { margin-top: 1.2rem; @media (max-width: 768px) { margin-top: 6px;} }
 .mt-16 { margin-top: 1.6rem; @media (max-width: 768px) { margin-top: 8px;} }

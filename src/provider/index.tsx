@@ -5,11 +5,11 @@ import Web3ModalProvider from '@/provider/Web3ModalProvider';
 import ModalProvider from '@/provider/modalProvider';
 import NoticeProvider from '@/provider/NoticeProvider';
 import { PersistGate } from 'redux-persist/integration/react';
-import Header from '@/Components/Header';
-import Footer from '@/Components/Footer';
 import { ReactQueryProvider } from '@/provider/ReactQueryProvider';
 import ApolloClientProvider from './ApolloClientProvider';
 import { ToastContainer } from 'react-toastify';
+import Header from '@/layouts/Header';
+import Footer from '@/layouts/Footer';
 
 export default function ProviderConfig() {
   return (

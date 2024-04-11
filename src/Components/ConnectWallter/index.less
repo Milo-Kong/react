@@ -1,22 +1,30 @@
-.wallectIcon {
-  display: flex;
-  flex-direction: row;
-  padding: 4px 8px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-  background: #00f;
+@import '@/Common/colors.less';
+
+.walletView {
+  height: 3.6rem;
+  width: 14.6rem;
+  background: @primaryColor;
   cursor: pointer;
+  margin-right: 2rem;
+  transition: .5s;
+  text-transform: uppercase;
+  @media screen and (max-width:768px) {
+    // flex:1;
+    width: 106px;
+    height: 28px;
+    margin-right: 10px;
+  }
 }
-
-.connect_icon {
-  width: 20px;
-  height: 20px;
+.walletView:hover {
+  background: @appbuttonHoverColor; 
 }
-
-.wallect_address {
-  margin-left: 8px;
-  color: #FFF;
-  font-size: 14px;
-  font-weight: 500;
+.address {
+  color: @whiteColor;
+  font-family: LexendDecaRegular;
+  font-size: 1.4rem;
+  font-style: normal;
+  @media screen and (max-width:768px) {
+    font-size: 12px;
+    text-align: center;
+  }
 }

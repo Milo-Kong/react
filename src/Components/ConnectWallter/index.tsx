@@ -3,15 +3,16 @@ import { formatAccount } from '@/Common';
 import useTranslationLanguage from '@/hooks/useTranslationLanguage';
 import { useWeb3Modal } from '@web3modal/wagmi/react';
 import { useAccount } from 'wagmi';
-export default function ConnectWallet() {
+
+export default function ConnectWallet({ openModal }: any) {
   const { open, close } = useWeb3Modal()
+  const { t } = useTranslationLanguage()
   const { address } = useAccount()
   function onConnect() {
     open && open()
+    openModal && openModal()
   }
-  const { t } = useTranslationLanguage()
-  return <div onClick={onConnect} className='wallectIcon'>
-    <img src={address ? '/svg/connect_icon.svg' : '/svg/no_connect.svg'} alt="" className='connect_icon' />
-    <span className='wallect_address'>  {address ? formatAccount(address) : t('connect wallet')} </span>
+  return <div className={`rowCenter walletView`} onClick={onConnect}>
+    <span className='address'>{address ? formatAccount(address) : t('Connect wallet')}</span>
   </div>
 }

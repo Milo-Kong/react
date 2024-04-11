@@ -1,0 +1,117 @@
+@import '@/Common/colors.less';
+
+.menuIcon {
+  width: 30px;
+  cursor: pointer;
+}
+.menuShowView {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top:50px;
+  left:0px;
+  right:0px;
+  bottom: 0px;
+  background: @bgColor;
+  padding: 20px 0 38px 0;
+  overflow-y: scroll;
+}
+.LaunhAppButton {
+  margin-left: 20px;
+  flex:1;
+  cursor: pointer;
+  height: 36px;
+  color: @whiteColor;
+  font-family: LexendDecaRegular;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  border: 1px solid @borderColor;
+  transition: .5s;
+}
+.LaunhAppButton:hover {
+  background: @appbuttonHoverColor;
+  border: 1px solid transparent;
+}
+.mobileMenuItem {
+  width: 100%;
+  cursor: pointer;
+  transition: .5s;
+}
+.mobileMenuItem:hover {
+  background: @earnShowItemContentBgColor;
+}
+.mobileMenuTitle {
+  color: #FFF;
+  font-family: LexendDecaMedium;
+  font-size: 16px;
+  font-weight: 500;
+  height: 50px;
+  line-height: 50px;
+  margin-left: 20px;
+}
+.mobileMenuTitleSel {
+  color:@primaryColor;
+}
+.mobileMenuSmallTitle {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: LexendDecaRegular;
+  margin-left: 40px;
+  height: 40px;
+  line-height: 40px;
+}
+.mobileTopButtonView {
+  margin-bottom: 18px;
+}
+.mobileMenuIcon {
+  width: 20px;
+  margin-right: 20px;
+}
+.mobilelanguageBgShowView {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: @blackColor_5;
+}
+.mobilelanguageShowView {
+  width: 100%;
+  position: fixed;
+  bottom:0;
+  z-index: 10;
+  height: 100%;
+  padding-top: 100px;
+  justify-content: flex-end;
+}
+.mobilelanguageShowConView {
+  background:@languageShowBgColoor;
+  height: 90%;
+  width: 100%;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  overflow-y: scroll;
+}
+.languageT {
+  color: #FFF;
+  font-family:LexendDecaMedium;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 20px;
+}
+.languageClose {
+  width: 20px;
+  margin: 20px;
+}
+.mobilelanguageTitle {
+  margin-left: 20px;
+  color: #FFF;
+  font-family: LexendDecaMedium;
+  font-size: 14px;
+  line-height: 50px;
+  height: 50px;
+  font-weight: 500;
+}
+.languageSelectIcon {
+  width: 20px;
+  margin-right: 20px;
+}

@@ -2,7 +2,7 @@ import { createWeb3Modal } from '@web3modal/wagmi/react'
 import { createPublicClient, http } from 'viem'
 import { defaultWagmiConfig } from '@web3modal/wagmi/react/config'
 import { WagmiProvider } from 'wagmi'
-import { MATCHTEST_Chain, MATCH_Chain } from '@/Contract/chains'
+import { bsc } from 'viem/chains'
 const projectId = '5bad4b7459c1bdcb4d4972a1227b03c2'
 const metadata = {
   name: 'Web3Modal',
@@ -10,7 +10,7 @@ const metadata = {
   url: 'https://web3modal.com',
   icons: ['https://avatars.githubusercontent.com/u/37784886']
 }
-const chains = [MATCH_Chain] as const
+const chains = [bsc] as const
 const wagmiConfig = defaultWagmiConfig({
   // chains, // required
   chains:chains,
@@ -21,7 +21,7 @@ export const publicClient = createPublicClient({
   batch: {
     multicall: true,
   },
-  chain:MATCH_Chain,
+  chain:bsc,
   transport:http()
 })
  
