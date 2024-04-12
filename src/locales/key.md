@@ -14,7 +14,7 @@
 | cs	| CZ	|捷克|
 | da	| DK	|丹麦|
 | et	| EE	|爱沙尼亚|
-| fr	| FR	|法国|
+| fr	| FR	|法国| 
 | de	| DE	|德国|
 | el	| GR	|希腊|
 | hi	| IN	|印度|
